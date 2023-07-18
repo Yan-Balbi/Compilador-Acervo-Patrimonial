@@ -1,2 +1,2 @@
 # Compilador-Acervo-Patrimonial
-Linguem de exibição de acervo patrimonial
+Linguagem de exibição de acervo patrimonial
