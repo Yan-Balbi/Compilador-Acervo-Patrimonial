@@ -33,12 +33,22 @@ Considerando uma pasta imagem_pagina criada dentro da pasta do usuário do compu
 ## Conteúdo do arquivo.txt
 
 patrimonio {
--	titulo = "Vila Rica -  Ouro Preto"
--	tipo_objeto = ESTRUTURA
--	unidade = SEM_UNIDADE
--	identificacao = 000002
--	autor = "Autor desconhecido"
--	nome_imagem = "vila_rica"
--	material = ("concreto","madeira","vidro","metal polido")
--	data = ( 14,03,1625)
--}
+
+	titulo = "Vila Rica -  Ouro Preto"
+ 
+	tipo_objeto = ESTRUTURA
+ 
+	unidade = SEM_UNIDADE
+ 
+	identificacao = 000002
+ 
+	autor = "Autor desconhecido"
+ 
+	nome_imagem = "vila_rica"
+ 
+	material = ("concreto","madeira","vidro","metal polido")
+ 
+	data = ( 14,03,1625)
+ 
+}
+
