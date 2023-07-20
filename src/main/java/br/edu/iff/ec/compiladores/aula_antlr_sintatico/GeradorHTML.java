@@ -56,7 +56,7 @@ public class GeradorHTML extends AulaAntlrBaseVisitor<Void>{
 
             saida.append("<h1 style=\"padding-top: 18px;\">" + ctx.titulo_estrutura().getText().replace("titulo=\"","").replace("\"", "") + "</h1>\n" +
                 "  <div class=\"box center\">\n" +
-                "    <div class=\"selected\"><img src=\"file:///C:/Users/yanba/Documents/NetBeansProjects/imagens/" + ctx.nome_imagem_estrutura().getText().replace("nome_imagem=", "").replace("\"", "")+".jpg\" alt=\"Girl in a jacket\" width=\"400px\"></div>\n" +
+                "    <div class=\"selected\"><img src=\"./imagem_pagina/" + ctx.nome_imagem_estrutura().getText().replace("nome_imagem=", "").replace("\"", "")+".jpg\" alt=\"Girl in a jacket\" width=\"400px\"></div>\n" +
                 "    <div class=\"selected\">\n" +
                 "      <p><b>Tipo de Objeto: </b>" + ctx.tipo_objeto_estrutura().getText().replace("tipo_objeto", "").replace("=","")+"</p>\n" +
                 "      <p><b>Unidade: </b>" + ctx.unidade_estrutura().getText().replace("unidade", "").replace("=", "")+"</p>\n" +
@@ -73,7 +73,7 @@ public class GeradorHTML extends AulaAntlrBaseVisitor<Void>{
 
             
             
-            FileWriter writer = new FileWriter("yanba.html");
+            FileWriter writer = new FileWriter(ctx.nome_imagem_estrutura().getText().replace("nome_imagem=", "").replace("\"", "")+".html");
             writer.write(saida.toString());
             writer.close();
             
