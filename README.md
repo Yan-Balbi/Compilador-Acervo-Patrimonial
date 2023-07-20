@@ -17,13 +17,28 @@ Autores:
 
 ## Como compilar o projeto
 
-Utilizando a IDE Netbeans, construa o projeto. Será gerado o arquivo executável `target/analisador-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar`.
+Utilizando a IDE Netbeans, construa o projeto através de 'build and run'. Será gerado o arquivo executável `target/aula_antlr_sintatico-1.0-SNAPSHOT-jar-with-dependencies.jar`.
 
 ## Para rodar o projeto
 
-Neste repositório, está disponível o arquivo executável `target/analisador-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar`, que também pode ser gerado seguindo as instruções da seção anterior.
+Neste repositório, está disponível o arquivo executável `target/aula_antlr_sintatico-1.0-SNAPSHOT-jar-with-dependencies.jar`, que também pode ser gerado seguindo as instruções da seção anterior.
 
-Para rodar o projeto, estando na raiz do projeto (`analisador-lexico`), execute como apresentado a seguir:
+Para rodar o projeto, estando na raiz do projeto (`aula_anltlr_sintatico-lexico`), execute como apresentado a seguir, considerndo que o arquivo.txt está na raiz do projeto:
 ```
-java -jar target/analisador-lexico-1.0-SNAPSHOT-jar-with-dependencies.jar <arquivo-entrada> <arquivo-saida>
+java -jar target\aula_antlr_sintatico-1.0-SNAPSHOT-jar-with-dependencies.jar arquivo.txt
 ```
+##EXEMPLO DE EXECUÇÃO
+Considerando uma pasta imagem_pagina criada dentro da pasta do usuário do computador, com o arquivo da imagem de nome vila_rica.
+
+##Conteúdo do arquivo.txt
+
+patrimonio {
+	titulo = "Vila Rica -  Ouro Preto"
+	tipo_objeto = ESTRUTURA
+	unidade = SEM_UNIDADE
+	identificacao = 000002
+	autor = "Autor desconhecido"
+	nome_imagem = "vila_rica"
+	material = ("concreto","madeira","vidro","metal polido")
+	data = ( 14,03,1625)
+}
