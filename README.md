@@ -27,18 +27,18 @@ Para rodar o projeto, estando na raiz do projeto (`aula_anltlr_sintatico-lexico`
 ```
 java -jar target\aula_antlr_sintatico-1.0-SNAPSHOT-jar-with-dependencies.jar arquivo.txt
 ```
-##EXEMPLO DE EXECUÇÃO
+## EXEMPLO DE EXECUÇÃO
 Considerando uma pasta imagem_pagina criada dentro da pasta do usuário do computador, com o arquivo da imagem de nome vila_rica.
 
-##Conteúdo do arquivo.txt
+## Conteúdo do arquivo.txt
 
 patrimonio {
-	titulo = "Vila Rica -  Ouro Preto"
-	tipo_objeto = ESTRUTURA
-	unidade = SEM_UNIDADE
-	identificacao = 000002
-	autor = "Autor desconhecido"
-	nome_imagem = "vila_rica"
-	material = ("concreto","madeira","vidro","metal polido")
-	data = ( 14,03,1625)
-}
+-	titulo = "Vila Rica -  Ouro Preto"
+-	tipo_objeto = ESTRUTURA
+-	unidade = SEM_UNIDADE
+-	identificacao = 000002
+-	autor = "Autor desconhecido"
+-	nome_imagem = "vila_rica"
+-	material = ("concreto","madeira","vidro","metal polido")
+-	data = ( 14,03,1625)
+-}
