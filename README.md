@@ -28,7 +28,7 @@ Para rodar o projeto, estando na raiz do projeto (`aula_anltlr_sintatico-lexico`
 java -jar target\aula_antlr_sintatico-1.0-SNAPSHOT-jar-with-dependencies.jar arquivo.txt
 ```
 ## EXEMPLO DE EXECUÇÃO
-Considerando uma pasta imagem_pagina criada dentro da pasta do usuário do computador, com o arquivo da imagem de nome vila_rica.
+Considerando uma pasta imagem_pagina criada dentro da pasta do usuário do computador, com o arquivo da imagem de nome 'vila_rica.jpg'.
 
 ## Conteúdo do arquivo.txt
 
