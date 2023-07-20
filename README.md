@@ -32,7 +32,8 @@ Considerando uma pasta imagem_pagina criada dentro da pasta do usuário do compu
 
 ## Conteúdo do arquivo.txt
 
-patrimonio {
+    
+    patrimonio {
 
 	titulo = "Vila Rica -  Ouro Preto"
  
@@ -50,5 +51,5 @@ patrimonio {
  
 	data = ( 14,03,1625)
  
-}
+    }
 
