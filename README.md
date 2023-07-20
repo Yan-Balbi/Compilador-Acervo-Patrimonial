@@ -35,21 +35,21 @@ Considerando uma pasta imagem_pagina criada dentro da pasta do usuário do compu
     
     patrimonio {
 
-	titulo = "Vila Rica -  Ouro Preto"
+		titulo = "Vila Rica -  Ouro Preto"
  
-	tipo_objeto = ESTRUTURA
+		tipo_objeto = ESTRUTURA
  
-	unidade = SEM_UNIDADE
+		unidade = SEM_UNIDADE
  
-	identificacao = 000002
+		identificacao = 000002
  
-	autor = "Autor desconhecido"
+		autor = "Autor desconhecido"
  
-	nome_imagem = "vila_rica"
+		nome_imagem = "vila_rica"
  
-	material = ("concreto","madeira","vidro","metal polido")
+		material = ("concreto","madeira","vidro","metal polido")
  
-	data = ( 14,03,1625)
+		data = ( 14,03,1625)
  
     }
 
