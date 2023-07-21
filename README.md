@@ -50,6 +50,8 @@ Considerando uma pasta imagem_pagina criada dentro da pasta do usuário do compu
 		material = ("concreto","madeira","vidro","metal polido")
  
 		data = ( 14,03,1625)
+
+  		descricao = "A antiga Vila Rica foi palco de muitos acontecimentos que influenciaram a história do Brasil. Além disso, visitar igrejas e museus, conhecer antigas minas de ouro e andar de trem são algumas das ofertas sobre o que fazer em Ouro Preto."
  
     }
 
