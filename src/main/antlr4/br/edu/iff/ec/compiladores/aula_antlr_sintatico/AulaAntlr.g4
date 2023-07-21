@@ -51,6 +51,7 @@ IMAGEM:'imagem';
 MATERIAL:'material';
 PATRIMONIO: 'patrimonio';
 NOME_IMAGEM: 'nome_imagem';
+DESCRICAO: 'descricao';
 
 UNIDADE_ACERVO: 'MIR'|'MT'|'MCM'|'MAP'|'MHAERJ'|'COV'|'CCA'|'CEC'|'SEM_UNIDADE';
 OBJETO: 'PINTURA' | 'ESCULTURA' | 'ESTRUTURA' | 'GRAVURA' | 'FOTOGRAFIA' | 'ARTEFATOS_ARQUEOLOGICOS' | 'ESCULTURA_EM_RELEVO' | 'INSTALACAO' | 'ARTE_TEXTIL' | 'MOBILIARIO' | 'DOCUMENTO'  | 'ARTEFATO_ETNOGRAFICO' | 'MOEDA' | 'MEDALHA' | 'INSTRUMENTO_MUSICAL' | 'GEMA' | 'JOIA' | 'EQUIPAMENTO_CIENTIFICO' | 'ARQUITETURA_EM_MINIATURA' | 'VEICULO';
@@ -63,7 +64,7 @@ IDENTIFICACAO: '0'..'9' '0'..'9' '0'..'9' '0'..'9' '0'..'9' '0'..'9';
 NUM: '0'..'9' '0'..'9';
 ANO: '0'..'9' '0'..'9' '0'..'9' '0'..'9';
 
-CADEIA:  '"'(' '?('a'..'z'|'A'..'Z'|'0..9'|'-'|'_'|'/'|'.'|' '|'á'|'é'|'í'|'ó'|'ú'|'ç'))*'"';
+CADEIA:  '"'(' '?('a'..'z'|'A'..'Z'|'0'..'9'|'-'|'_'|'/'|'.'|' '|'á'|'é'|'í'|'ó'|'ú'|'à'|'â'|'ê'|'î'|'ô'|'û'|'ç'|'ã'|'õ'|','|'('|')'|'{'|'}'))*'"';
 CADEIA_IMAGEM: 'a'..'z'|'A'..'Z'|'0..9'|'-'|'_'|'/'|'.'|' ';
 VARIAVEL: ('a'..'z'|'A'..'Z') ('a'..'z'|'A'..'Z'|'0'..'9')*;
 
@@ -94,4 +95,6 @@ nome_imagem_estrutura: NOME_IMAGEM ATRIBUIR CADEIA;
 
 material_estrutura: MATERIAL ATRIBUIR ABRE_PAR (materiais+=CADEIA VIRGULA)*? CADEIA FECHA_PAR;
 
-estrutura:  PATRIMONIO ABRE_CHAVE titulo_estrutura tipo_objeto_estrutura unidade_estrutura identificacao_estrutura autor_estrutura  nome_imagem_estrutura material_estrutura data_estrutura FECHA_CHAVE EOF;
+descricao_estrutura: DESCRICAO ATRIBUIR CADEIA;
+
+estrutura:  PATRIMONIO ABRE_CHAVE titulo_estrutura tipo_objeto_estrutura unidade_estrutura identificacao_estrutura autor_estrutura  nome_imagem_estrutura material_estrutura data_estrutura descricao_estrutura FECHA_CHAVE EOF;

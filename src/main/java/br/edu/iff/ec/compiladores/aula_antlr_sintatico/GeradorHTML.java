@@ -63,7 +63,9 @@ public class GeradorHTML extends AulaAntlrBaseVisitor<Void>{
                 "      <p><b>Identificação: </b>" + ctx.identificacao_estrutura().getText().replace("identificacao=", "")+"</p>\n" +
                 "      <p><b>Autor: </b>" + ctx.autor_estrutura().getText().replace("autor","").replace("\"","").replace("=","").replace("\"", "").replace(",",", ")+"</p>\n" +
                 "      <p><b>Material: </b>" + ctx.material_estrutura().getText().replace("material","").replace("=","").replace("(","").replace(")", "").replace("\"","").replace(",",", ")+"</p>"+
-                "      <p><b>data: </b>" + ctx.data_estrutura().getText().replace(",", "/").replace("data","").replace("=", "").replace("\"", "").replace("(","").replace(")","")+"</p>");
+                "      <p><b>Data: </b>" + ctx.data_estrutura().getText().replace(",", "/").replace("data","").replace("=", "").replace("\"", "").replace("(","").replace(")","")+"</p>"+
+                "      <p><b>Descricao: </b>" + ctx.descricao_estrutura().getText().replace("descricao","").replace("=", "").replace("\"", "")+"</p>"
+                );
             saida.append("  </div>\n" +
                 "\n" +
                 "</div>\n" +
